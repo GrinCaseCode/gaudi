@@ -820,6 +820,15 @@ body {
 .block-form__title {
     padding-bottom: 15px;
 }
+.form-page .title-middle {
+    padding-bottom: 5px;
+}
+.descr-title {
+    padding-top: 15px;
+}
+.row_styles {
+    margin-top: 10px;
+}
 }
 
 /* Custom, iPhone Retina */
