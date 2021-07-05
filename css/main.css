@@ -94,7 +94,7 @@ a {
 	display: flex;
 	align-items: center;
 }
-.logo {
+.logo { 
 	display: inline-block;
 }
 .logo img {
