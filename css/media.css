@@ -398,6 +398,7 @@ body {
 .menu-mobile .header__right {
     padding: 15px 0;
     align-items: flex-start;
+    display: flex;
 }
 .header_menu {
      background-color: #27282f;
