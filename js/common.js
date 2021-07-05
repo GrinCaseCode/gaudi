@@ -251,8 +251,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		var selectTab2 = $(this).attr("href");
 		$(selectTab2).fadeIn(200);
 
-		$('.slider-portfolio').slick("destroy");
-		$('.slider-portfolio').slick("init");
+		$('.slider-portfolio').slick('refresh');
 	}); 
 
 	$('.team-nav li a').click(function(event) {

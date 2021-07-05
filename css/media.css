@@ -758,10 +758,10 @@ body {
     padding-bottom: 40px;
 }
 .team-nav li {
-    padding: 10px;
+    padding: 10px 5px;
 }
 .team-nav a::after {
-    border: 9px solid transparent;
+    border: 13px solid transparent;
     border-top: 10px solid #fff
     }
     .row_insta > div {
