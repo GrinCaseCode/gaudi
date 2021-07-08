@@ -614,7 +614,7 @@ sup {
 	padding: 30px;
 	min-height: 100%;
 	background-color: rgb(18 18 24 / 60%);
-	z-index: 3;
+	z-index: 2;
 	position: absolute;
 	font-weight: 500;
 	top: 0;
@@ -622,8 +622,19 @@ sup {
 	left: -265px;
 	transition: all 0.3s;
 }
-.item-portfolio:hover .info-portfolio {
+.item-portfolio__hover {
+	position: absolute;
+	height: calc(100% - 60px);
+	top: 0;
 	left: 0;
+	z-index: 6;
+	width: 100%;
+}
+.item-portfolio__hover:hover + .info-portfolio {
+	left: 0;
+}
+.item-portfolio {
+	position: relative;
 }
 .info-portfolio__middle {
 	margin-top: 22px;
