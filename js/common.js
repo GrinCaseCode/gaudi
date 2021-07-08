@@ -50,6 +50,15 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 
+	$(".range-catalog_area .range-catalog__input").ionRangeSlider({
+		type: "double",
+		min: 120,
+		max: 600,
+		from: 120,
+		to: 450,
+		prettify_enabled: true,
+	});
+
 	//слайдер
 
 	$('.slider-billbord').each(function(){
@@ -67,17 +76,33 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			appendArrows: $controls,
 			appendDots: $controls,
 			responsive: [
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1,
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
 			}
-		}
-		]
+			]
 		});
 	});
 
 	$('.slider-portfolio').each(function(){
+		var $this = $(this),
+		$controls = $(this).siblings('.controls-slider');
+		$this.slick({
+			dots: true,
+			arrows: true,
+			slidesToShow: 1,
+			infinite: false,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+			appendArrows: $controls,
+			appendDots: $controls
+		});
+	});
+
+	$('.slider-card').each(function(){
 		var $this = $(this),
 		$controls = $(this).siblings('.controls-slider');
 		$this.slick({
@@ -150,19 +175,46 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
-		$('.slider-etaps-nav').slick({
-			dots: false,
-			focusOnSelect: true,
-			asNavFor: '.slider-etaps',
-			arrows: false,
-			slidesToShow: 6,
-			infinite: false,
-			slidesToScroll: 1,
-		});
+	$('.slider-etaps-nav').slick({
+		dots: false,
+		focusOnSelect: true,
+		asNavFor: '.slider-etaps',
+		arrows: false,
+		slidesToShow: 6,
+		infinite: false,
+		slidesToScroll: 1,
+	});
 
-		/*slider reviews*/
+	$('.slider-recomend').slick({
+		arrows: true,
+		dots: false,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+		slidesToShow: 3,
+		infinite: true,
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				dots: true,
+				slidesToShow: 1,
+			}
+		}
+		]
+	});
 
-			var rev = $('.slider-reviews');
+	/*slider reviews*/
+
+	var rev = $('.slider-reviews');
 	rev.on('init', function(event, slick, currentSlide) {
 		var
 		cur = $(slick.$slides[slick.currentSlide]),
@@ -261,6 +313,17 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(".team-pane").fadeOut(0);
 		var selectTab3 = $(this).attr("href");
 		$(selectTab3).fadeIn(200);
+	}); 
+
+	$('.tabs-card li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-card").fadeOut(0);
+		var selectTab4 = $(this).attr("href");
+		$(selectTab4).fadeIn(200);
+
+		$('.slider-card').slick('refresh');
 	}); 
 
 	$(".input-phone").mask("+7 (999) 999-99-99");

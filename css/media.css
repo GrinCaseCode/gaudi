@@ -18,6 +18,13 @@
     .item-news__content {
     padding: 23px;
 }
+.row_news-page .item-news__content {
+    padding: 30px 32px;
+} 
+.consult-block {
+    padding-left: 43px;
+    padding-right: 43px;
+}
 }
 @media only screen and (max-width : 1440px) {
 .logo img {
@@ -111,6 +118,50 @@ body {
 .footer__right {
 	padding-left: 0;
 }
+.row_news-page {
+    margin: 0 -15px;
+}
+.row_news-page > div {
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.row_news-page .item-news__content {
+    padding: 28px 28px;
+}
+.row_news-page .item-news__image {
+    height: 250px;
+}
+.wrapper_page .header .logo img {
+    width: 98px;
+}
+.wrapper_page {
+    padding-top: 80px;
+}
+.consult-block .checkbox {
+    margin-top: 18px;
+    white-space: normal;
+}
+.consult-block {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.consult-block__name {
+    font-size: 21px;
+    }
+    .consult-block__phone {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+.consult-block .btn-main {
+    height: 56px;
+}
+.consult-block__image {
+    margin-bottom: 10px;
+}
+.card-info {
+    padding-left: 19px;
+    margin-left: -65px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -239,6 +290,19 @@ body {
 .footer__bottom {
     font-size: 12px;
     }
+    .row_news-page .item-news__image {
+    height: 200px;
+}
+.row_news-page .item-news__content {
+    padding: 20px 20px;
+}
+.card-info__item strong {
+    font-size: 15px;
+    line-height: 21px;
+    }
+    .consult-block__name {
+    font-size: 17px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -408,6 +472,29 @@ body {
     border-bottom: 1px solid #fff;
     display: block;
 }
+.catalog {
+    padding-bottom: 50px;
+}
+.tabs-card a {
+    height: 60px;
+}
+.card__left {
+    padding-right: 15px;
+}
+.card-info {
+    margin: 0;
+}
+.card__image {
+    height: 425px;
+    }
+    .card-info__item {
+        margin-bottom: 15px;
+    }
+    .consult-block {
+        padding-left: 190px;
+        padding-right: 190px;
+        margin-top: 30px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -656,6 +743,57 @@ body {
     padding-top: 35px;
 }
 
+.catalog-filter .item-select {
+    width: 100%;
+    min-width: initial;
+}
+.range-catalog {
+    width: 100%;
+}
+.catalog-filter {
+    display: block;
+}
+.tag-catalog {
+    font-size: 16px;
+    }
+    .tag-catalog__remove {
+        margin-left: 10px;
+    }
+    .tabs-card a {
+        font-size: 16px;
+        min-width: initial;
+        width: 100%;
+    }
+    .tabs-card li {
+        flex: 1;
+    }
+    .card__image {
+    height: 330px;
+}
+.card-info {
+    padding-top: 20px;
+}
+.consult-block {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.slider-recomend .slick-dots li button:focus,
+ .slider-recomend .slick-dots li button:hover, 
+ .slider-recomend .slick-dots li.slick-active button {
+background-color: #e8c189;
+}
+.title-section_recomend {
+    padding-top: 25px;
+}
+.slick-dots {
+    bottom: 0;
+}
+.slider-recomend {
+    padding-bottom: 35px;
+}
+.card {
+    padding-bottom: 45px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -829,6 +967,49 @@ body {
 .row_styles {
     margin-top: 10px;
 }
+.news-page {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.page-numbers {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+.pager {
+    justify-content: center;
+}
+.row_news-page .item-news__content {
+    padding-bottom: 25px;
+}
+.row_news-page .item-news__image {
+    height: 190px;
+}
+.tabs-card a {
+    font-size: 14px;
+    padding: 0 10px;
+}
+.card__image {
+    height: 285px;
+}
+.consult-block {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.card-description {
+    padding: 25px 20px;
+}
+.card-description__title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 11px;
+    }
+    .card-description p {
+        margin-bottom: 15px;
+    }
+    .item-portfolio_recomend .info-portfolio {
+        display: block;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -911,6 +1092,18 @@ body {
 @media only screen and (min-width : 992px) {
 .menu-mobile {
     display: none !important;
+}
+.row_card .col-lg-4 {
+        -webkit-box-flex: 0;
+    -ms-flex: 0 0 29.333333%;
+    flex: 0 0 29.333333%;
+    max-width: 29.333333%;
+}
+.row_card .col-lg-8 {
+        -webkit-box-flex: 0;
+    -ms-flex: 0 0 70.666667%;
+    flex: 0 0 70.666667%;
+    max-width: 70.666667%;
 }
 }
 
