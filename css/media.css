@@ -744,6 +744,9 @@
     font-size: 14px;
     line-height: 22px;
 }
+.director-image {
+    display: block;
+}
 }
 
 /* Small Devices, Tablets */
@@ -1395,7 +1398,7 @@
     line-height: 0;
     }
      .director__text::before {
-        top: -34px;
+        top: -48px;
         left: 15px;
      }
      .director__text::after {
