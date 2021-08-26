@@ -1392,11 +1392,10 @@
     }
     .director__text::after, .director__text::before {
         font-size: 170px;
-    height: 40px;
-    line-height: 108px;
+    line-height: 0;
     }
      .director__text::before {
-        top: -18px;
+        top: -34px;
         left: 15px;
      }
      .director__text::after {
