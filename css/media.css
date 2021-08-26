@@ -234,6 +234,7 @@
 }
 .director-image img {
     max-width: 100%;
+    height: auto;
 }
 .director__text {
     font-size: 14px;
@@ -1398,7 +1399,7 @@
     line-height: 0;
     }
      .director__text::before {
-        top: -48px;
+        top: 48px;
         left: 15px;
      }
      .director__text::after {
